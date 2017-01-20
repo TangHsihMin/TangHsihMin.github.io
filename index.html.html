@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+  <html>
+   <head>
+
+       <style>
+           #all{
+               width: 512px;
+               height: 400px;
+               background: #FFFFFF;
+           }
+           #header{
+           text-align:center;
+           
+           height: 41px;       
+          background:#999999;
+           }
+           
+           #sidbar1{
+               overflow: auto;
+               float: left;
+               text-align:center;
+               width: 20%;
+               height: 300px;
+               background:#999900; 
+           }
+           
+           #sidbar2{
+               overflow: auto;
+               float:right;
+               text-align:center;
+               width: 20%;
+               height: 300px;
+               background: #009999;
+           }
+           
+           #content{
+               overflow: auto;
+               margin-left: 21%;
+               margin-right: 21%;
+               height: 300px;
+               text-align:center;
+               background:#777777;
+           }
+           
+           #footer{
+               clear: both;
+               text-align:center;
+               width: 512;
+               height: 50px;
+               background: #990099;
+               }  
+          
+			body, ul, li, a{
+				margin: 0;
+				padding: 0;
+				font-size: 13px;
+				text-decoration: none;
+			}
+           ul, li {
+				list-style: none;
+			}
+			/* 選單 li 之樣式 */
+			ul.navigation li {
+				position: relative;
+				float: left;
+			}
+			/* 選單 li 裡面連結之樣式 */
+			ul.navigation li a{
+				display: block;
+				padding: 12px 20px;
+				background: #888;
+				color: #FFF;
+			}
+			/* 特定在第一層，以左邊灰線分隔 */
+			ul a:hover,  al{
+            background-color: red;
+           }
+			/* 特定在第一層 > 第二層或以後下拉部分之樣式 */
+ 			ul.navigation ul{
+				display: none;
+				float: left;
+				position: absolute;			
+				left: 0;	
+				margin: 0;
+			}
+           ul.navigation > li > a:hover{
+				color: #666;
+				background:#FFFF00
+			}
+			/* 當第一層選單被觸發時，指定第二層顯示 */
+			ul.navigation li:hover > ul{
+				display: block;
+			}			
+                /*	 特定在第二層或以後下拉部分 li 之樣式 
+			ul.navigation ul li {
+				border-bottom: 1px solid #DDD;
+			}
+			 特定在第二層或以後下拉部分 li （最後一項不要底線）之樣式 
+			ul.navigation ul li:last-child {
+				border-bottom: none;
+			}
+			 第二層或以後選單 li 之樣式*/ 
+			ul.navigation ul a {
+				float: left;
+                width: 120px;
+				padding: 10px 12px;	
+				color: #666;		
+				background: #EEE;			
+			}
+			ul.navigation ul a:hover {		
+				background: #CCC;				
+			}
+			/* 第三層之後，上一層的選單觸發則顯示出來（皆為橫向拓展）*/ 
+			ul.navigation ul li:hover > ul{
+				display: block;
+				position: absolute;
+				top: 0;				
+				left: 100%;
+			}  */
+       </style>    
+    </head>
+    <body>
+        <div id="all">
+            <div id="header">
+            <ul class="navigation">
+			<li>
+				<a href="#">選單內容 1</a>
+				<ul>
+					<li><a href="#">選單內容 1 - 1</a></li>
+					<li>
+						<a href="#">選單內容 1 - 2</a>
+						<ul>
+							<li><a href="#">選單內容 2 - 1</a></li>
+							<li>
+								<a href="#">選單內容 2 - 2</a>
+							</li>	
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">選單內容 2</a></li>
+			<li><a href="#">選單內容 3</a></li>
+			<li><a href="#">選單內容 4</a></li>
+		    <li><a href="#">選單內容 5</a></li>		
+               </ul> 
+            </div>
+            <div id="sidbar1"><p>Brackets is a lightweight, yet powerful, modern text editor. We blend visual tools into the editor so you get the right amount of help when you want it without getting in the way of your creative process. You'll enjoy writing code in Brackets.</p> </div>
+            <div id="sidbar2"><p>Live Preview
+Get a real-time connection to your browser. Make changes to CSS and HTML and you'll instantly see those changes on screen. Also see where your CSS selector is being applied in the browser by simply putting your cursor on it. It's the power of a code editor with the convenience of in-browser dev tools.</p></div>
+            <div id="content"><p>Preprocessor Support
+Work with preprocessors in a whole new way. We know how important preprocessors are to your workflow. That’s why we want to make Brackets the best code editor for preprocessors out there. With Brackets you can use Quick Edit and Live Highlight with your LESS and SCSS files which will make working with them easier than ever.</p></div>
+        <div id="footer"> 1</div>    
+        </div>   
+    </body>
+
+
+</html>
